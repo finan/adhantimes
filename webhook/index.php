@@ -16,9 +16,14 @@ $senderId = $input['entry'][0]['messaging'][0]['sender']['id'];
 $messageText = $input['entry'][0]['messaging'][0]['message']['text'];
 
 
-$answer = "As-salāmu ʿalaykum Brother, Sister. To get prayer times schedule please type your city. For example 'Tokyo'.";
-if($messageText == "Tokyo") {
-    $answer = "Solat yuk!";
+
+if($messageText == "Tokyo" || $messageText == "Jakarta" || $messageText == "London" || $messageText == "Cambridge" || $messageText == "Groningen")
+{
+	$answer = "Sholat yuk!";
+}
+elseif (!empty($message)
+{
+    $$answer = "As-salāmu ʿalaykum Brother, Sister. To get prayer times schedule please type your city. For example 'Tokyo'.";
 }
 
 $response = [
