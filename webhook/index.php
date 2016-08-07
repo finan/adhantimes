@@ -23,7 +23,7 @@ if($messageText == "Tokyo" || $messageText == "Jakarta" || $messageText == "Lond
 }
 elseif (!empty($messageText))
 {
-  $$answer = "As-salāmu ʿalaykum Brother, Sister. To get prayer times schedule please type your city. For example 'Tokyo'.";
+  $answer = "As-salāmu ʿalaykum Brother, Sister. To get prayer times schedule please type your city. For example 'Tokyo'.";
 }
 
 $response = [
