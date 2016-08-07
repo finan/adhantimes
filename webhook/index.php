@@ -21,7 +21,7 @@ if($messageText == "Tokyo" || $messageText == "Jakarta" || $messageText == "Lond
 {
 	$answer = "Sholat yuk!";
 }
-elseif (!empty($messageText)
+elseif (!empty($messageText))
 {
   $$answer = "As-salāmu ʿalaykum Brother, Sister. To get prayer times schedule please type your city. For example 'Tokyo'.";
 }
