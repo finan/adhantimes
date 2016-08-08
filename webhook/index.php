@@ -14,8 +14,9 @@ $input = json_decode(file_get_contents('php://input'), true);
 
 $senderId = $input['entry'][0]['messaging'][0]['sender']['id'];
 $messageText = $input['entry'][0]['messaging'][0]['message']['text'];
+$messageText = strtolower($messageText);
 
-if (strtolower($messageText == "Tokyo" || $messageText == "Jakarta" || $messageText == "London" || $messageText == "Cambridge" || $messageText == "Groningen"))
+if ($messageText == "tokyo" || $messageText == "jakarta" || $messageText == "london" || $messageText == "cambridge" || $messageText == "groningen")
 {
 	$answer = "Sholat yuk!";
 }
