@@ -94,7 +94,7 @@ $midnight = $json['data']['timings']['Midnight'];
 
 if (substr( $messageText, 0, 1 ) === "@")
 {
-	$answer = 'Date: '.$date.'<br>Fajr: '.$fajr.'<br>Sunrise: '.$sunrise.'<br>Dhuhr: '.$dhuhr.'<br>Asr: '.$asr.'<br>Sunset: '.$sunset.'<br>Maghrib: '.$maghrib.'<br>Isha: '.$isha.'<br>Imsak: '.$imsak.'<br>Midnight: '.$midnight.'<br>';
+	$answer = "Date: $date\nFajr: $fajr\nSunrise: $sunrise\nDhuhr: $dhuhr\nAsr: $asr\nSunset: $sunset\nMaghrib: $maghrib\nIsha: $isha\nImsak: $imsak\nMidnight: $midnight\n";
 }
 
 elseif (!empty($messageText))
